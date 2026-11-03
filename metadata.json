@@ -1,0 +1,6 @@
+{
+  "name": "Bipul AI",
+  "description": "Intelligent multilingual personal voice and call assistant with Jio forwarding support, English, Hindi, and Bengali speech, and automated call summaries.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: bipul-ai
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/telephony/status
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: APP_URL
+        sync: false
+      - key: TELEPHONY_PROVIDER
+        value: exotel
+      - key: TELEPHONY_VIRTUAL_NUMBER
+        sync: false
+      - key: TELEPHONY_ACCOUNT_SID
+        sync: false
+      - key: TELEPHONY_AUTH_TOKEN
+        sync: false
+      - key: TELEPHONY_WEBHOOK_SECRET
+        sync: false
